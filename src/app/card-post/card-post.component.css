@@ -1,0 +1,15 @@
+.post-card{
+    border: solid 1px #888888;
+    box-shadow: 2px 2px 3px rgba(100,100,100,0.25);
+    margin: 5px;
+   
+}
+.post-card:hover {
+    background-color:  #959494;
+  }
+
+a{ text-transform: none;
+    text-decoration: none;
+    color: black;
+
+}

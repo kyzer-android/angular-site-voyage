@@ -4,24 +4,29 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DefaultPageComponent } from './default-page/default-page.component';
-import { CardListComponent } from './card-list/card-list.component';
+
 import { CardPostComponent } from './card-post/card-post.component';
-import { MenuEnteteComponent } from './menu-entete/menu-entete.component';
-import { LiensService } from './services/liens.service';
+import { CardListComponent } from './card-list/card-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { backgroundColor } from './directives/bgcolors.directives';
+import { MenuComponent } from './menu/menu.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DefaultPageComponent,
-    CardListComponent,
     CardPostComponent,
-    MenuEnteteComponent,
+    CardListComponent,
+    backgroundColor,
+    MenuComponent,
     
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,5 @@
+<div class="boutonPays" *ngFor="let unPays of pays">
+    <!-- <span><a [routerLink]="getPayslUrl(unPays.pays)" >{{unPays.pays}}</a> </span>   -->
+    <span><a [routerLink]="unPays.url" >{{unPays.pays}}</a> </span>
+</div>
+<a [routerLink]="getPayslUrl('Perou')">perou</a>
